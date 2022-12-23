@@ -22,6 +22,8 @@ namespace Mono.API
                 app.UseSwaggerUI();
             }
 
+            app.UseCors(policyBuilder => policyBuilder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+
             app.UseHttpsRedirection();
 
             app.UseAuthorization();

@@ -1,4 +1,6 @@
-﻿namespace Mono.Application.Airports.GetAllAirports
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Mono.Application.Airports.GetAllAirports
 {
     public class GetAllAirportsResponse
     {
@@ -7,6 +9,7 @@
             Airports = airports;
         }
 
+        [Required]
         public IEnumerable<string> Airports { get; }
     }
 }
