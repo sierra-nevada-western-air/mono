@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Mono.Application\Mono.Application.csproj" />
+    <ProjectReference Include="..\Mono.Infrastructure\Mono.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

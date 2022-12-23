@@ -1,3 +1,5 @@
+using Mono.Infrastructure.Modules;
+
 namespace Mono.API
 {
     public class Program
@@ -9,6 +11,7 @@ namespace Mono.API
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            new CoreModule().Register(builder.Services);
 
             var app = builder.Build();
 
